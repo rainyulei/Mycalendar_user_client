@@ -1,0 +1,12 @@
+.Header_logo {
+  /* width: 120px; */
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 28px 16px 20px;
+  float: right;
+}
+.Header_logo .username {
+  /* margin-right: 30px; */
+  font-size: 16px;
+  color: black;
+}
