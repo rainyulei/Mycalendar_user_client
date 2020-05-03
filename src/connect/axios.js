@@ -11,8 +11,6 @@ const axiosEntery = axios.create({
  */
 axiosEntery.interceptors.request.use(
   (req) => {
-    console.log(req.url);
-    
     if (!whiteList.includes(req.url)) {
       // 添加token
       const token = store2.get('token');
@@ -58,7 +56,6 @@ axiosEntery.interceptors.response.use(
         level: 'error',
       });
     }
-    console.log(resp.headers)
     if (resp.headers.setauthenticationheader) { 
       const token = resp.headers.setauthenticationheader
       store.set('token',token)

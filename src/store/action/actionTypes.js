@@ -15,6 +15,9 @@ export const ErrorTypes = {
   ADD_ERROR: 'ADD_ERROR',
   DELETE_ERROR: 'DELETE_ERROR',
 };
+export const Weather = {
+  GET_WEATHER: 'GET_WEATHER',
+};
 export const WebSetting = {
   SET_WEB_SETTING: 'SET_WEB_SETTING',
 };

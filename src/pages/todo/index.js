@@ -43,7 +43,6 @@ function Todo(props) {
   const [event, setEvent] = useState(null);
   useEffect(() => {
     if (!date) {
-      console.log(date,"meiyou date")
       const nowDay = createDate()
       findEvent(nowDay);
     }

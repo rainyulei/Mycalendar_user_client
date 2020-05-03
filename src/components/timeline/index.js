@@ -109,7 +109,6 @@ function DrawerForm(props) {
    */
   const getData = (listData) => {
     const newList = [];
-    console.log(JSON.stringify(listData));
     listData.forEach((dayData) => {
       const day = Object.keys(dayData)[0];
       newList.push({ day });

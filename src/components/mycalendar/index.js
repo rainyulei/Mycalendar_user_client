@@ -34,7 +34,6 @@ function Mycalendar(props) {
         <ul className='events'>
           {listData.map((item) => {
             if (!item.finished && (item.important || item.focus)) {
-              console.log(JSON.stringify(item), '=============item');
               return (
                 <li key={item.id}>
                   <Badge

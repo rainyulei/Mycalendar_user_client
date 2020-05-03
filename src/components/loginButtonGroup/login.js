@@ -17,9 +17,7 @@ function LoginModel(props) {
   const handlesetalertVisible = () => {
     setalert({ visible: false, Message: '' });
   };
-  console.log('login');
   const handleOk = () => {
-    console.log('重新渲染');
     setConfirmLoading(true);
     formLogin.validateFields().then((values) => {
       values.password = md5(values.password);

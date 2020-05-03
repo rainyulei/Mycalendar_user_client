@@ -1,16 +1,17 @@
 import React from 'react';
 import { Layout } from 'antd';
-const { Header, Sider, Content } = Layout;
+const { Header, Content } = Layout;
 export default function TodoLayout(props) {
   const { children } = props;
   return (
     <Layout>
       <Header
         style={{
+          height:'90px',
           position: 'fixed',
           zIndex: 1,
           width: '100%',
-          background: 'white',
+          background: '#fff',
         }}
       >
         {children[0]}
@@ -22,7 +23,7 @@ export default function TodoLayout(props) {
           position: 'fixed',
           width: '100%',
           padding: '0 50px',
-          marginTop: 100,
+          marginTop: 90,
         }}
       >
         <Layout>
